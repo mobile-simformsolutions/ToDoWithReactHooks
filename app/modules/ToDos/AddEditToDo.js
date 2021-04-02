@@ -25,7 +25,6 @@ const AddEditToDo = ({
         newTodoArray.push(item.toLowerCase());
       });
       if (
-        editMode === false &&
         newTodoArray.length > 0 &&
         newTodoArray.includes(todo.toLowerCase())
       ) {
