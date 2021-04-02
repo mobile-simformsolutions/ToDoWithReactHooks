@@ -7,7 +7,6 @@ import {
 
 const initialState = {
   todos: [],
-  deleteSuccess: false,
 };
 
 const TodosReducer = (state = initialState, action) => {
@@ -20,7 +19,7 @@ const TodosReducer = (state = initialState, action) => {
       return {...state, todos: action.payload.data};
     case DELETE_TODO_ITEM:
       console.log('DELETE_TODO_ITEM', action.payload.data);
-      return {...state, todos: action.payload.data, deleteSuccess: true};
+      return {...state, todos: action.payload.data};
     default:
       return state;
   }

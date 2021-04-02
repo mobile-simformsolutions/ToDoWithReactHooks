@@ -43,13 +43,7 @@ const RenderItem = ({item, todoItems, navigation, deleteTodoItem}) => {
   );
 };
 
-const TodoList = ({
-  navigation,
-  getTodoItems,
-  deleteTodoItem,
-  deleteSuccess,
-  todoItems,
-}) => {
+const TodoList = ({navigation, getTodoItems, deleteTodoItem, todoItems}) => {
   useEffect(() => {
     getTodoItems();
   }, [getTodoItems]);
